@@ -1,0 +1,403 @@
+.list {
+    list-style: none;
+}
+
+:root {
+    --accent-color:
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+}
+
+.header-logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logo-color {
+    color: black;
+}
+
+.menu-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+}
+
+.menu-link:hover, .menu-link:focus {
+    color: #2196F3;
+}
+
+.menu-link.current {
+    color: #2196F3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tel-link, .mail-lnk {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+}
+
+.tel-link:hover, .tel-link:focus {
+    color: #2196F3;
+}
+
+.contacts-mail:hover, .contacts-mail:focus {
+    color: #2196F3;
+}
+
+.mail-link-current {
+    color: #2196F3;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contacts-tel:hover, .contacts-tel:focus {
+    color: #2196F3;
+}
+
+/*End-Header*/
+
+/*------*HERO*-------*/
+
+.hero {
+    text-align: center;
+    background: #2F303A;
+}
+
+.hero-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.pop-up-button {
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pop-up-button {
+    display: inline-block;
+}
+
+/*------* END HERO*-------*/
+
+/*-------*description*---------*/
+
+.description-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/*-------* End Description*---------*/
+
+/*-------*What We Do*---------*/
+
+.what-we-do-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+/*-------*End What We Do*---------*/
+
+/*-------*Team*---------*/
+
+.section-team {
+    background: #F5F4FA;
+}
+
+.Team-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.Name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* text-align: center;*/
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.specialty {
+    font-size: 16px;
+    line-height: 19px;
+    /* text-align: center;*/
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/*-------*End team*---------*/
+
+/*-------*Footer*---------*/
+
+.footer {
+    background: #2F303A;
+}
+
+.map {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+    /*color: #FFFFFF;*/
+}
+
+.mail-footer, .tel-footer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-footer:hover, .mail-footer:focus {
+    color: #2196F3;
+}
+
+.logo-footer {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logo-color-footer {
+    color: #FFFFFF;
+}
+
+/*-------*End Footer*---------*/
+
+/*portfolio*/
+
+/*HEADER*/
+
+.header-logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logo-color {
+    color: black;
+}
+
+.menu-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+}
+
+.menu-link:hover, .menu-link:focus {
+    color: #2196F3;
+}
+
+.menu-link.current {
+    color: #2196F3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tel-link, .mail-lnk {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+}
+
+.tel-link:hover, .tel-link:focus {
+    color: #2196F3;
+}
+
+.contacts-mail:hover, .contacts-mail:focus {
+    color: #2196F3;
+}
+
+.mail-link-current {
+    color: #2196F3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.contacts-tel:hover, .contacts-tel:focus {
+    color: #2196F3;
+}
+
+/*End-Header*/
+
+/*FILTER*/
+
+.btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pop-up-btn {
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #212121;
+    background: #F5F4FA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.pop-up-btn:hover, .pop-up-btn:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+/*END FILTER*/
+
+/*PORTFOLIO*/
+
+.project-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+
+.project-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/*END PORTFOLIO*/
+
+/*FOOTER*/
+
+.footer {
+    background: #2F303A;
+}
+
+.logo-footer {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logo-color-footer {
+    color: #FFFFFF;
+}
+
+.mail-footer, .tel-footer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*END FOOTER*/
