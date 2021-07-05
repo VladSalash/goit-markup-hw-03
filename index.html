@@ -14,29 +14,34 @@
   <body>
     <!-- HEADER -->
     <header  class="header">
-      <nav class="navigation"> 
-        <a class="header-logo" href=" ">Web <span class="logo-color">Studio</span></a>
+      <div class="container header-container" > 
+      <nav class="main-nav"> 
+        <a class="logo-header" href=" / ">Web <span class="logo-color">Studio</span></a>
         
-          <ul class="menu"> 
-          <li class="menu-item, list"><a class="menu-link current" href=" "> Студия</a></li>
-          <li class="menu-item, list"><a class="menu-link" href="./portfolio.html "> Портфолио</a></li>
-          <li class="menu-item, list"><a class="menu-link" href=" "> Контакты</a></li>
+          <ul class="site-nav"> 
+          <li class="nav-item list"><a class="link current" href=" "> Студия</a></li>
+          <li class="nav-item list"><a class="link" href="./portfolio.html "> Портфолио</a></li>
+          <li class="nav-item list"><a class="link" href=" "> Контакты</a></li>
         </ul>
       </nav>
-      <ul class="contacts-section">
-        <li class="contacts-mail, list"><a class="mail-link-current" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
-        <li class="contacts-telm, list"><a class="tel-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="auth-nav">
+        <li class="nav-item, list"><a class="mail-link-current" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>
+        <li class="nav-item, list"><a class="tel-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
     <main>
       <!-- HERO -->
-      <section class="hero">
+      <section class="section hero">
+        <div class="container hero-container">
         <h1 class="hero-title" >Эффективные решения для вашего бизнеса</h1>
         <button class="pop-up-button" type="button">Заказать услугу</button>
+      </div>
       </section>
       <!-- Описание -->
-      <section class="section-description">
-        <h2 hidden class="">description</h2>
+      <section class="section section-description">
+        <div class="container description-container" >
+        <h2  class="visually-hidden">description</h2>
         <ul class="description-item">
           <li class="description-list, list" >
             <h3 class="description-title" >Внимание к деталям</h3>
@@ -67,11 +72,13 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
       <!-- чем мы занимаемся -->
-      <section>
+      <section class=" section What-we-do-section">
+        <div class="container what-we-do-container">
         <h2 class="what-we-do-name">Чем мы занимаемся</h2>
-        <ul>
+        <ul class="what-item">
           <li class="img, list">
             <img
               src="Images/WhatWeDo/1.jpg"
@@ -97,11 +104,13 @@
             />
           </li>
         </ul>
+      </div>
       </section>
       <!-- НАША КОМАНДА -->
-      <section class="section-team">
+      <section class="section section-team">
+        <div class="container team-container">
         <h2 class="Team-title">Наша команда</h2>
-        <ul>
+        <ul class="team-item">
           <li class="item-1, list">
             <img 
               src="Images/Team/ИгорьДемьяненко.jpg"
@@ -143,10 +152,12 @@
             <p class="specialty">UI Designer</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <!-- Footer -->
     <footer class="footer">
+      <div class="container footer-container">
       <a class="logo-footer" href=" ">Web <span class="logo-color-footer">Studio</span></a>
       <address>
         <ul class="contact-footer">
@@ -161,6 +172,7 @@
         <li class="contacts-tel, list"><a class="tel-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+    </div>
     </footer>
   </body>
 </html>

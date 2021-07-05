@@ -10,23 +10,64 @@ body {
     font-family: "Roboto", sans-serif;
     --main-font: "Roboto", sans-serif;
     --secondary-font: "Raleway", sans-serif;
+    
 }
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin:auto;
+    align-items:center;
+   }
+   .section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+   }
+    .header-container{
+    display: flex;
+    align-items: center;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    
+}
+.logo-header {
 
-.header-logo {
-    font-family: Raleway;
-    font-weight: bold;
+    font-family:var(--secondary-font);
+    font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    text-decoration: none;
+    line-height: 1.2;
     letter-spacing: 0.03em;
+    color: var(--logo-second-color);
+    text-decoration: none;
+    margin-right: 93px;
+    margin-left: 0;
     color: #2196F3;
 }
-
+    
+ 
 .logo-color {
-    color: black;
+    color:var(--logo-accent-color);
+}
+.site-nav{
+    list-style: none;
+    display: flex;  
+    align-items: center;
 }
 
-.menu-link {
+.auth-nav{
+    display: flex;
+}
+.auth-nav .nav-item + .nav-item{
+    margin-left: 50px;
+}
+.nav-item:not(:last-child) {
+    margin-right: 50px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -35,18 +76,27 @@ body {
     text-decoration: none;
     color: #212121;
 }
-
-.menu-link:hover, .menu-link:focus {
-    color: #2196F3;
+.link{
+    text-decoration: none;
+    color: var(--secondary-font-color);
+    font-weight: 500px;
+    line-height: 1.14;
 }
-
-.menu-link.current {
+.link.current {
     color: #2196F3;
     cursor: pointer;
     text-decoration: none;
 }
-
-.tel-link, .mail-lnk {
+.nav-item,:hover, .menu-link:focus {
+    color:var(--link-hover-focus);
+}
+.auth-nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-item,:not(:first-child){
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -54,14 +104,12 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
+    margin-left: 50px;
 }
 
-.tel-link:hover, .tel-link:focus {
-    color: #2196F3;
-}
-
-.contacts-mail:hover, .contacts-mail:focus {
-    color: #2196F3;
+.nav-item,:hover,
+ .nav-item,:focus {
+    color:var(--link-hover-focus);
 }
 
 .mail-link-current {
@@ -72,17 +120,20 @@ body {
     font-weight: 500;
 }
 
-.contacts-tel:hover, .contacts-tel:focus {
-    color: #2196F3;
-}
-
-/*End-Header*/
+ /*End-Header*/
 
 /*------*HERO*-------*/
 
 .hero {
     text-align: center;
     background: #2F303A;
+    padding-top: 200px ;
+    padding-bottom: 200px;
+
+
+}
+.hero-container{
+
 }
 
 .hero-title {
@@ -96,6 +147,9 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    width: 696px;
+    margin-right: auto;margin-left: auto;
+    margin-bottom: 30px;
 }
 
 .pop-up-button {
@@ -112,6 +166,8 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+  padding: 10px 32px;
+  border-color: #020202;
 }
 
 .pop-up-button {
@@ -121,7 +177,9 @@ body {
 /*------* END HERO*-------*/
 
 /*-------*description*---------*/
-
+.description-container{
+    
+}
 .description-title {
     font-style: normal;
     font-weight: bold;
@@ -132,6 +190,31 @@ body {
     color: #212121;
 }
 
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    overflow: hidden;
+}
+.description-item{
+    display: flex;
+}
+
+
+.description-list:not(:last-child){
+    margin-right: 30px;
+}
+.description-list{
+    width: 270px;
+
+}
 .description {
     font-style: normal;
     font-weight: normal;
@@ -139,12 +222,23 @@ body {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    line-height: 1.7;
 }
 
 /*-------* End Description*---------*/
 
 /*-------*What We Do*---------*/
+.What-we-do{
+padding-bottom: 94px;
+}
+.what-we-do-container{
 
+}
+.what-item{
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+}
 .what-we-do-name {
     font-style: normal;
     font-weight: bold;
@@ -153,6 +247,12 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+.what-we-do-name{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
 }
 
 /*-------*End What We Do*---------*/
@@ -171,6 +271,10 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+.team-item{
+    display: flex;
+
 }
 
 .Name {
@@ -324,6 +428,8 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    padding: 6px 22px;
+  border-color: #2196f3;
 }
 
 .pop-up-btn {
@@ -339,6 +445,8 @@ body {
     background: #F5F4FA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+  padding: 6px 22px;
+  border-color: #F5F4FA;
 }
 
 .pop-up-btn:hover, .pop-up-btn:focus {
