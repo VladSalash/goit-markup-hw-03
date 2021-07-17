@@ -4,13 +4,14 @@
 
 :root {
   --primary-font: "Roboto", sans-serif;
-  --secondar-font: "Raleway", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --primary-font-color: #757575;
   --secondary-font-color: #212121;
   --logo-accent-color: #2196f3;
   --logo-second-color: #000000;
   --logo-footer-color: #ffffff;
   --link-hover-focus: #2196f3;
+  --border-color: #ececec;
   --box-shadov: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -30,6 +31,11 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
 }
@@ -40,6 +46,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
 }
 .header-container {
   display: flex;
@@ -72,7 +79,7 @@ body {
   color: #2196f3;
 }
 .logo-color {
-  color: var(--logo-accent-color);
+  color: var(--logo-second-color);
 }
 .site-nav {
   list-style: none;
@@ -125,20 +132,12 @@ body {
   margin-left: 50px;
 }
 
-.tel-link {
-  text-decoration: none;
-  color: #757575;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 .auth-nav-item:hover,
 .auth-nav-item:focus {
   color: var(--link-hover-focus);
 }
 .mail-link-current {
   color: #2196f3;
-  cursor: pointer;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -202,6 +201,7 @@ body {
 
 /*-------*description*---------*/
 .descript {
+  padding-top: 94px;
 }
 .visually-hidden {
   position: absolute;
@@ -220,7 +220,7 @@ body {
   display: flex;
   list-style: none;
 }
-.description-list {
+.description-list:not(:last-child) {
   margin-right: 30px;
 }
 .description-list {
@@ -338,8 +338,12 @@ body {
 
 .footer {
   background: #2f303a;
+  padding: 60px 0;
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 8px;
+}
 .map {
   font-style: normal;
   font-weight: normal;
@@ -386,16 +390,7 @@ body {
 /*portfolio*/
 
 /*HEADER*/
-:root {
-  --primary-font: "Roboto", sans-serif;
-  --secondar-font: "Raleway", sans-serif;
-  --primary-font-color: #212121;
-  --secondary-font-color: #757575;
-  --logo-accent-color: #2196f3;
-  --logo-second-color: #000000;
-  --logo-footer-color: #ffffff;
-  --link-hover-focus: #2196f3;
-}
+
 body {
   font-family: var(--primary-font), "Open Sans", sans-serif;
   color: var(--primary-font-color);
@@ -417,9 +412,6 @@ body {
   text-decoration: none;
 }
 
-.logo-color {
-  color: var(--logo-accent-color);
-}
 .site-nav {
   list-style: none;
 }
@@ -445,8 +437,7 @@ body {
   text-decoration: none;
 }
 
-.tel-link,
-.mail-lnk {
+.contact-link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -466,36 +457,30 @@ body {
   color: #2196f3;
 }
 
-.mail-link-current {
-  color: #2196f3;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 .contacts-tel:hover,
 .contacts-tel:focus {
   color: #2196f3;
 }
-
+body {
+  
+}
 /*End-Header*/
 
 /*FILTER*/
-.section-hero{
-     padding-top: 94px;
-     padding-bottom: 94px;
+.section-hero {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.filtr-menu-list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+.filtr-menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .filtr-item:not(:last-child) {
   margin-right: 8px;
 }
-
-
 
 .btn {
   font-family: var(--primary-font);
@@ -527,8 +512,6 @@ body {
   padding: 6px 22px;
   border-radius: 4px;
   border-color: transparent;
-
-  
 }
 
 .pop-up-btn:hover,
@@ -541,26 +524,26 @@ body {
 
 /*PORTFOLIO*/
 
-.portfolio-item{
+.portfolio-item {
   margin-top: 30px;
   margin-left: 30px;
-    /* margin: 15px ; */
-    flex-basis: calc(100% / 3 - 30px)
+  /* margin: 15px ; */
+  flex-basis: calc(100% / 3 - 30px);
 }
 .portfolio-project {
- /* margin: -15px; */
+  /* margin: -15px; */
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin-left: -30px;
   margin-top: -30px;
-  }
-  
-.project-box{
-    padding: 20px 24px;
-    border: 1px solid #EEEEEE;
-    border-top: none;
-} 
+}
+
+.project-box {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 .project-name {
   font-style: normal;
   font-weight: bold;
@@ -579,10 +562,6 @@ body {
 
 /*FOOTER*/
 
-.footer {
-  background: #2f303a;
-}
-
 .logo-footer {
   font-family: Raleway;
   font-weight: bold;
@@ -591,6 +570,8 @@ body {
   text-decoration: none;
   letter-spacing: 0.03em;
   color: #2196f3;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .logo-color-footer {

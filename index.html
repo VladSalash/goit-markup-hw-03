@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link
-      rel="modern-normalize"
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
@@ -18,19 +17,20 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
+​
   <body>
     <!-- HEADER -->
     <header class="header">
       <div class="container header-container">
         <nav class="main-nav">
           <a class="logo-header" href=" / "
-            >Web <span class="logo-color">Studio</span></a
+            >Web<span class="logo-color">Studio</span></a
           >
           <ul class="site-nav">
             <li class="nav-item">
-              <a class="link current" href=" "> Студия</a>
+              <a class="link current" href="./index.html"> Студия</a>
             </li>
             <li class="nav-item">
               <a class="link" href="./portfolio.html "> Портфолио</a>
@@ -40,12 +40,14 @@
         </nav>
         <ul class="auth-nav">
           <li class="auth-nav-item">
-            <a class="mail-link-current" href="mailto:info@devstudio.com">
+            <a class="contact-link" href="mailto:info@devstudio.com">
               info@devstudio.com</a
             >
           </li>
           <li class="auth-nav-item">
-            <a class="tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -59,7 +61,7 @@
         </div>
       </section>
       <!-- Описание -->
-      <section class="descript section">
+      <section class="descript">
         <div class="container description-container">
           <h2 class="visually-hidden">description</h2>
           <ul class="description-item">
@@ -190,8 +192,8 @@
           >Web <span class="logo-color-footer">Studio</span></a
         >
         <address>
-          <ul class="contact-footer">
-            <li class="footer-item, list">
+          <ul class="contact-footer list">
+            <li class="footer-item">
               <a
                 class="map"
                 href="https://goo.gl/maps/65E6jA36ebbG1yaQ8"
@@ -200,13 +202,13 @@
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-
-            <li class="contacts-mail, list">
+​
+            <li class="footer-item">
               <a class="mail-footer" href="mailto:info@devstudio.com">
                 info@devstudio.com</a
               >
             </li>
-            <li class="contacts-tel, list">
+            <li class="footer-item">
               <a class="tel-footer" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
